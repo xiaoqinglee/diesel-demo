@@ -12,7 +12,7 @@ getting-started:
 
 https://diesel.rs/guides/getting-started
 
-ng form guides:
+long form guides:
 
 https://diesel.rs/guides/
 
