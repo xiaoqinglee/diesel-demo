@@ -1,0 +1,13 @@
+mysql 的 int 和 bigint 只说明了整数的长度, 没有说明整数是否有符号.
+默认为 signed, 如果想存 unsigned, 需要额外指定 unsigned.
+使用 unsigned 类型时, 最小值为 0, 不允许存负数.
+When we set the MySQL INT UNSIGNED column, it means that negative values cannot be inserted in this column.
+
+https://blog.devart.com/mysql-int-data-type.html
+https://dev.mysql.com/doc/refman/8.0/en/integer-types.html
+
+postgres 的 integer 和 bigint 都是有符号的.
+serial 和 bigserial 只会取对应整数类型的 [1, max] (取值集合是对应整数类型集合的一半).
+但是 serial 和 bigserial 都不是真实的数据类型, 所以存入 0 和 负数 都是可以的.
+
+https://www.postgresql.org/docs/15/datatype-numeric.html
